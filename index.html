@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shiny Modal</title>
+    <link rel="stylesheet" href="./assets/css/shiny-modal.css">
+</head>
+<body>
+    <div id="xlModal" class="shiny-modal modal-xl">
+        <div class="shiny-modal-header">
+            <span class="close" data-dismiss="shiny-modal">x</span>
+            <h1>XL SIZE MODAL</h1>
+        </div>
+        <div class="shiny-modal-body">
+            <div class="contents">
+                <p>XL SIZE MODAL CONTENTS</p>
+            </div>
+        </div>
+        <div class="shiny-modal-footer">
+            <a href="#" class="btn primary" data-dismiss="shiny-modal">Close</a>
+        </div>
+    </div>
+    <div id="lModal" class="shiny-modal modal-l">
+        <div class="shiny-modal-header">
+            <span class="close" data-dismiss="shiny-modal">x</span>
+            <h1>L SIZE MODAL</h1>
+        </div>
+        <div class="shiny-modal-body">
+            <div class="contents">
+                <p>L SIZE MODAL CONTENTS</p>
+            </div>
+        </div>
+        <div class="shiny-modal-footer">
+            <a href="#" class="btn primary" data-dismiss="shiny-modal">Close</a>
+        </div>
+    </div>
+    <div id="mModal" class="shiny-modal modal-m">
+        <div class="shiny-modal-header">
+            <span class="close" data-dismiss="shiny-modal">x</span>
+            <h1>M SIZE MODAL</h1>
+        </div>
+        <div class="shiny-modal-body">
+            <div class="contents">
+                <p>M SIZE OTHER MODAL CONTENTS</p>
+            </div>
+        </div>
+        <div class="shiny-modal-footer">
+            <a href="#" class="btn primary" data-dismiss="shiny-modal">Close</a>
+        </div>
+    </div>
+    <div id="normalModal" class="shiny-modal">
+        <div class="shiny-modal-header">
+            <span class="close" data-dismiss="shiny-modal">x</span>
+            <h1>NORMAL SIZE MODAL</h1>
+        </div>
+        <div class="shiny-modal-body">
+            <div class="contents">
+                <p>NO ESC AND OVERLAY CLICK</p>
+            </div>
+        </div>
+        <div class="shiny-modal-footer">
+            <a href="#" class="btn primary" data-dismiss="shiny-modal">Close</a>
+        </div>
+    </div>
+    
+    <div id="shiny-modal-holder">
+        <ul>
+            <li><a data-toggle="shiny-modal" data-target="#xlModal" href="#">XL Modal</a></li>
+            <li><a data-toggle="shiny-modal" href="#lModal">L Modal</a></li>
+            <li><a id="modal" href="#">Modal</a></li>
+            <li><a data-toggle="shiny-modal" href="#wrongModal" data-target="#wrongModal">Ajax</a></li>
+        </ul>
+    </div>
+    
+    <div id="default-modal-holder">
+        <ul>
+            <li><a href="#" id="alert">alert</a></li>
+            <li><a href="#" id="confirm">confirm</a></li>
+        </ul>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./dist/js/shiny-modal.js"></script>
+    <script src="./dist/js/demo.js"></script>
+</body>
+</html>
